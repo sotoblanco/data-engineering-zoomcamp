@@ -9,6 +9,7 @@ terraform {
 }
 
 provider "google" {
+  credentials = file("~/.gc/dtc-de-course-374821-467e33e73c93.json")
   project = var.project
   region = var.region
   // credentials = file(var.credentials)  # Use this if you do not want to set env-var GOOGLE_APPLICATION_CREDENTIALS
